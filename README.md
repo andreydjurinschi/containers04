@@ -16,13 +16,23 @@
 ## Выполнение
 1. Создал и клонировал репозиторий, затем в папке проекта создал `readme` файл.
 
-2. 
+2. Далее открываем консоль в проекте и запускаю следующую команду:
 
-## Results
-Document the results of the laboratory work here.
+```bash
+docker run -ti -p 8000:80 --name containers04 ubuntu bash
+```
+`docker run` - создает и запускает новый контейнер
 
-## Conclusion
-Summarize the findings and conclusions of the laboratory work.
+`-ti` - режим запуска в виде terminal, input
 
-## References
-List any references or sources used in the laboratory work.
+`-p` - указывает порт
+
+`--name` - задает имя контейнеру
+
+`ubuntu` - базовый образ
+
+`bash` - открывает рабочую область внутри контейнера
+
+![Создание контейнера](https://i.imgur.com/nm4yceW.png)
+
+Открывается окно с терминалом:
